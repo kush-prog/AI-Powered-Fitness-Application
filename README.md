@@ -43,61 +43,35 @@ The system follows a **microservices architecture**, where different services ha
 ---
 
 ## 📂 Project Structure
-```bash
 AI-Powered-Fitness-Application/
-│── user-service/        # User Management
-│── activity-service/    # Activity Tracking
-│── ai-service/          # AI Processing & Insights
-│── config-server/       # Centralized Configurations
-│── eureka-server/       # Service Discovery
-│── gateway-server/      # API Gateway
-│── rabbitmq/            # Messaging Integration
-│── docs/                # Documentation & Diagrams
+│── user-service/ # User Management
+│── activity-service/ # Activity Tracking
+│── ai-service/ # AI Processing & Insights
+│── config-server/ # Centralized Configurations
+│── eureka-server/ # Service Discovery
+│── gateway-server/ # API Gateway
+│── rabbitmq/ # Messaging Integration
+│── docs/ # Documentation & Diagrams
 
-🧑‍💻 Setup & Run
-🔧 Prerequisites
+yaml
+Copy code
 
-☕ Java 17+
+---
 
-📦 Maven
+## 🧑‍💻 Setup & Run
+### Prerequisites
+- Java 17+  
+- Maven  
+- Docker (for RabbitMQ, PostgreSQL, MongoDB)  
+- Google Gemini API Key  
 
-🐳 Docker (for RabbitMQ, PostgreSQL, MongoDB)
-
-🤖 Google Gemini API Key
-
-🚀 Steps to Run
-
-1️⃣ Clone the repository
-
-git clone https://github.com/kush-prog/AI-Powered-Fitness-Application.git
-cd AI-Powered-Fitness-Application
-
-
-2️⃣ Start infrastructure (DBs & RabbitMQ)
-
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/kush-prog/AI-Powered-Fitness-Application.git
+   cd AI-Powered-Fitness-Application
+Start infrastructure (DBs & RabbitMQ):
+```bash
 docker-compose up -d
+Run Config Server, Eureka Server, and Gateway.
 
-
-3️⃣ Run supporting services
-
-Start Config Server
-
-Start Eureka Server
-
-Start Gateway Server
-
-4️⃣ Run core microservices
-
-cd user-service
-mvn spring-boot:run
-
-cd activity-service
-mvn spring-boot:run
-
-cd ai-service
-mvn spring-boot:run
-
-## 🔮 Future Improvements
-Add Authentication & Authorization (Keycloak planned).
-
-Extend AI insights for personalized fitness plans.
