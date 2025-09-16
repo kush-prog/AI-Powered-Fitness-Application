@@ -3,7 +3,6 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/fitnessActivity
       database: fitnessActivity
-
   rabbitmq:
     host: localhost
     port: 5672
