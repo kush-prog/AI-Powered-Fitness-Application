@@ -1,8 +1,8 @@
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/fitnessActivity
-      database: fitnessActivity
+      uri: mongodb://localhost:27017/${DB_NAME}
+      database: ${DB_NAME)
   rabbitmq:
     host: localhost
     port: 5672
