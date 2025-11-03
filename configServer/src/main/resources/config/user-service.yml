@@ -2,7 +2,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/fitness_user_db
     username: postgres
-    password: Ku$h--2003
+    password: ${DB_PASSWORD}
 
   jpa:
     hibernate:
